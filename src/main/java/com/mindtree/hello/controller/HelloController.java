@@ -12,4 +12,10 @@ public class HelloController {
 	{
 		return "Hello "+name;
 	}
+	
+	@GetMapping("display/{number}")
+	public String display2(@PathVariable Long number)
+	{
+		return "Hello "+number;
+	}
 }
